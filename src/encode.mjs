@@ -78,7 +78,6 @@ async function encode(pixels, width, palettes) {
   let data = Buffer.alloc(pixels.length + height)
   let dataOffset = 0
   for (let i = 0; i < height; i++) {
-    console.log('writing scanline', i)
     dataOffset = data.writeUInt8(0, dataOffset) // No Filter
     for (let j = 0, end = width; j < end; j++) {
       dataOffset = data.writeUInt8(pixels[i*width+j], dataOffset)
