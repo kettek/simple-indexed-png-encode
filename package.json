@@ -1,6 +1,6 @@
 {
   "name": "simple-indexed-png-encode",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Simple indexed PNG encode library",
   "main": "dist/bundle.js",
   "scripts": {
